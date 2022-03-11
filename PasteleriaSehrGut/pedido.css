@@ -1,0 +1,316 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-weight: bold;
+    background-color: rgba(230, 188, 205, 1);
+}
+
+section{
+    position: inherit;
+    width: 100%; 
+    height: 500px;
+    padding: 3% 5%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(27, 154, 170, 0.5);
+}
+
+li{
+    font-size: 4.5ch;
+}
+
+/*-----------------------BARRA DE NAVEGACIÓN-------------------------*/
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    background-color: rgba(122, 89, 128, 1);
+}
+
+.navDiv{
+    width: 50%;
+    height: 100%;
+}
+
+.navItem{
+    color: white;
+    padding: 8px 5px;
+    background-color: transparent;
+    display:inline-table;
+    width: max-content;
+    height: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navItem:hover{
+    background-color: rgba(223, 174, 180, 0.3); 
+    transition: 0.5s;
+    padding: 20px; /*Se hizo una animación xd*/
+    border-radius: 20%;
+}
+
+/*-----------------------BANNER-------------------------*/
+
+.sectionBanner{
+    position: inherit;
+    width: 100%;
+    height: 800px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url('https://4.bp.blogspot.com/-SEzEkwnKXP8/VFFZbWrixaI/AAAAAAAAKiM/P9KsBXhKkF0/s1600/Meseros-DirectButler-2.jpg');
+    background-size: auto;
+    background-position: -10ch -10ch; /*MOVER IMAGEN DENTRO DEL DIV PARA CUADRAR LA SIMETRÍA*/
+}
+
+.divBanner{
+    width: 40%;
+    height: 20%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 4ch;
+    color: black;
+    border-style: solid;
+    border-radius: 2%;
+}
+
+.imgBanner{
+    margin: 50px;
+    width: 15%;
+    height: 45%;
+
+    border-radius: 10%;
+}
+
+
+/*-----------------------SECCION DE DATOS DEL CLIENTE-------------------------*/
+
+ol{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+.divDatos{
+    position: inherit;
+    width: 30%;
+    height: 100%;
+    padding: 2% 2%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5%;
+}
+
+.inputText{
+    width: 50%;
+    height: 6%;
+    margin: 10px;
+    border-radius: 3%;
+    box-shadow: -5px 10px 0px 1px rgba(0, 0, 0, 0.5); /*Ejes: X Y Z Profundidad*/
+}
+
+/*-----------------------SECCION DE TIPO DE PASTEL-------------------------*/
+
+.pastelGigante{
+    width: 55%;
+    height: 350%;
+
+    transform: translateY(40%) translateX(-40%);
+
+}
+
+.divTipoPastel{
+    position: inherit;
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2%;
+
+    transform: translateY(40%) translateX(-40%);
+}
+
+.pTipoPastel{
+    font-size: 120%;
+    transform: translateY(-250%);
+}
+
+.listaItem{
+    position: inherit;
+    width: 50%;
+    height: 20%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    font-size: 2.5ch;
+    font-weight: 100;
+    background-color: transparent;
+    transform: translateX(15%) translateY(-30%);
+}
+
+/*-----------------------3 SECCION DE CUERPO DE PASTEL-------------------------*/
+/*-----------------------5 SECCION DE INGREDIENTES EXTRA-------------------------*/
+/*-----------------------6 SECCION DE ADORNOS-------------------------*/
+
+.div3456{
+    position: inherit;
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 2%;
+    
+    transform: translateY(40%) translateX(52%);
+}
+
+/*-----------------------4 SECCION DE RELLENO DEL PASTEL-------------------------*/
+.listaCremaCheckBox{
+    border: 0px;
+    margin: 0px;
+    padding: 20px;
+
+    width: 40%;
+    height: 5%;
+    
+    font-size: 2ch;
+    transform: translateY(-30%) translateX(-10%);
+}
+
+/*-----------------------SECCION DE OBSERVACIONES Y COMNETARIOS-------------------------*/
+.divObservaciones{
+    position: relative;
+    margin-top: 5%;
+    margin-left: -10%;
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3%;
+}
+
+.observacion{
+    margin-top: 2%;
+    width: 99%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.botonGenerarPedido{
+    width: 25%;
+    height: 60%;
+
+    transform: translateX(150%) translateY(150%);
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+/*------------------FOOTER--------------------*/
+
+footer{
+    width: 100%;
+    height: 9rem;
+    background-color: rgba(122, 89, 128, 1);
+}
+
+.divFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pFooter{
+    border-style: solid;
+    padding: 5px;
+    font-weight: bold;
+    opacity: 0.4;
+}
+
+.socialIcons{
+    width: 20rem;
+    height: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.5;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+      font-weight: bold;
+      background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+      color: white;
+  }

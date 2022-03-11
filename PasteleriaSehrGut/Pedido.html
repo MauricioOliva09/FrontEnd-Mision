@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido | Sehr Gut</title>
+    <link rel="stylesheet" href="./pedido.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Para iconos en el footer-->
+</head>
+
+<body>
+    <nav>
+        <div class="navDiv"></div>
+        <a class="navItem" href="./Home.html">Inicio</a>
+        <a class="navItem" href="./Inventario.html">Inventario</a>
+        <a class="navItem" href="./Pedido.html">Realizar Pedido</a>
+        <a class="navItem" href="./Contacto.html">Contacto</a>
+    </nav>
+
+    <section class="sectionBanner">
+        <img class="imgBanner" src="./assets/SehrGut.png" alt="Sehr Gut Logo">
+        <div class="divBanner">
+            <h2>Permítenos tomar tu orden</h2>
+        </div>
+    </section>
+
+    <ol>
+        <section class="contenedorDatos">
+            <div class="divDatos">
+                <li><h3>Tus Datos</h3></li>
+                <label for="Nombre">Nombre</label><br>
+                <input class="inputText" type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre..." maxlength="20"><br><br>
+                <label for="Apellido">Apellido</label><br>
+                <input class="inputText" type="text" name="Apellido" id="Apellido" placeholder="Escribe tu Apellido" maxlength="30"><br><br>
+                <label for="Correo">Correo</label><br>
+                <input class="inputText" type="email" name="Correo" id="Correo" placeholder="Inserta tu correo" maxlength="40"><br><br>
+                <label for="telefono">Teléfono de contacto</label><br>
+                <input class="inputText" type="tel" name="telefono" id="telefono" placeholder="Teléfono 10 digitos" maxlength="10"><br><br>
+            </div>
+        </section>
+        
+        <section>
+            <img class="pastelGigante" src="https://www.pastelesallegro.com.mx/wp-content/uploads/2020/02/8419-e2.png" alt="pastel Gigante">
+            <div class="divTipoPastel">
+                <li><h3>Tipo de Pastel</h3></li>
+                <p class="pTipoPastel">Elija el tipo de pastel que desea:</p>
+
+                <div class="listaItem">
+                    <input type="radio" name="tipo" id="sencillo">
+                    <label for="sencillo">Sencillo................. 2 Kg</label>
+                </div>
+                <div class="listaItem">
+                    <input type="radio" name="tipo" id="especial">
+                    <label for="especial">Especial................. 4 Kg</label><br>
+                </div>
+                <div class="listaItem">
+                    <input type="radio" name="tipo" id="linea dorada">
+                    <label for="linea dorada">Línea Dorada......... 5-10 Kg</label>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="div3456">
+                <li><h3>Cuerpo de tu Pastel</h3></li>
+                <p class="pTipoPastel">Elija por favor alguna de las opciones disponibles:</p>
+                <div class="listaItem">
+                    <input type="radio" name="cuerpo" id="chocolate">
+                    <label for="chocolate">Pan de Chocolate</label>
+                </div>
+                <div class="listaItem">
+                    <input type="radio" name="cuerpo" id="vainilla">
+                    <label for="vainilla">Pan de Vainilla</label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="div3456">
+                <li><h3>Relleno de tu pastel</h3></li>
+                <p class="pTipoPastel">Elije los ingredientes que deseas esté relleno tu pastel:</p>
+
+                <div class="listaCremaCheckBox">
+                    <input type="checkbox" name="relleno" id="crema">
+                    <label for="crema">¿Crema? ¿De cuál?</label><br>
+                </div>
+                <ul>
+                    <div class="listaItem">
+                        <input class="itemListaRelleno" type="radio" name="tipoCrema" id="cremaChocolate">
+                        <label for="cremaChocolate">Chocolate</label>
+                    </div>
+                    <div class="listaItem">
+                        <input type="radio" name="tipoCrema" id="cremaVainilla">
+                        <label for="cremaVainilla">Vainilla</label>
+                    </div>
+                    <div class="listaItem">
+                        <input type="radio" name="tipoCrema" id="cremaCafe">
+                        <label for="cremaCafe">Café</label>
+                    </div>
+                    <div class="listaItem">
+                        <input type="radio" name="tipoCrema" id="cremaTrufa">
+                        <label for="cremaTrufa">Trufa</label>
+                    </div>
+                    <div class="listaItem">
+                        <input type="radio" name="tipoCrema" id="cremaNuez">
+                        <label for="cremaNuez">Nuez</label>
+                    </div>
+                    <div class="listaItem">
+                        <input type="radio" name="tipoCrema" id="cremaFresa">
+                        <label for="cremaFresa">Fresa</label>
+                    </div>                    
+                        
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="div3456">
+                <li><h3>Ingrediente extra</h3></li>
+                <p class="pTipoPastel">Elije los ingredintes que desea que contenga tu pastel encima:</p>
+                <div class="listaItem">
+                    <input type="checkbox" name="chispas" id="chispas">
+                    <label for="chispas">Chispas de Chocolate</label>
+                </div>
+                <div class="listaItem">
+                    <input type="checkbox" name="fresas" id="fresas">
+                    <label for="fresa">Fresas</label>
+                </div>
+                <div class="listaItem">
+                    <input type="checkbox" name="duraznos" id="duraznos">
+                    <label for="duraznos">Duraznos</label>
+                </div>
+                <div class="listaItem">
+                    <input type="checkbox" name="uvas" id="uvas">
+                    <label for="uvas">Uvas</label>
+                </div>
+                <div class="listaItem">
+                    <input type="checkbox" name="mangos" id="mangos">
+                    <label for="mango">Mangos</label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="div3456">
+                <li><h3>Adornos</h3></li>
+                <p class="pTipoPastel">Elija algún adorno que desea obervar en su pastel ideal:</p>
+                <div class="listaItem">
+                    <input type="radio" name="adorno" id="chantilly">
+                    <label for="chantilly">Chantilly</label><br>
+                </div>
+                <div class="listaItem">
+                    <input type="radio" name="adorno" id="velas">
+                    <label for="velas">Velas</label><br>
+                </div>
+                <div class="listaItem">
+                    <input type="radio" name="adorno" id="fondant">
+                    <label for="fondant">Fondant</label><br>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="divObservaciones">
+                <li><h3>Observaciones y Breve descripción</h3></li>
+                <div>
+                    <label for="descripcion">Por favor, mencione algún detalle adicional que no hemos contemplado para su pastel ideal</label><br>
+                    <input class="observacion" type="text" name="descripcion" id="descripcion" max="200">
+                    <input class="botonGenerarPedido" type="button" name="generarPedido" id="generarPedido" value="Generar Pedido" onclick="alert('La solicitud de su pastel ideal ha sido enviada, espere a recibir noticias de su pedido a su información de contacto');");">
+                </div>
+            </div>
+        </section>
+    </ol>    
+</body>
+
+<footer>
+    <nav>
+        <div class="divFooter">
+            <p class="pFooter">Sehr Gut Pastelerías 2022</p>
+            <div class="socialIcons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+</html>
