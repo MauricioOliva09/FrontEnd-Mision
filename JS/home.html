@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Pokedex </title>
+    <link rel="stylesheet" href="./home.css">
+
+</head>
+
+<body>
+    <div>
+        <h1> Pokedex: </h1>
+        <p> El lugar donde puedes consultar y saber acerca de tus pokemones favoritos</p>
+    </div>
+
+    <section>
+        <div class="cuerpoPokedexIzq0">
+            <div class="cuerpoPokedexIzq3">
+                <div class="circuloAzul"></div>
+                <div class="circuloBlanco"></div>
+                <div class="circuloNegro"></div>
+                <div class="circuloAzulFinal"></div>
+
+                <div class="luzSuperiorRoja">
+                    <div class="circuloRojo"></div>
+                </div>                
+                <div class="luzSuperiorAmarilla">
+                    <div class="circuloAmarillo"></div>
+                </div>
+                <div class="luzSuperiorVerde">
+                    <div class="circuloVerde"></div>
+                </div>
+
+            </div>
+            <div class="cuerpoPokedexIzq1">
+                <div class="cuerpoPokedexIzq2">
+                    <div class="formulario">
+                        <label class="titulo" for="titulo"> Pokedex </label>
+                        <label class="nombre" for="Nombre"> Inserta Aquí el Nombre del Pokémon del que Deseas Saber: </label>
+                        <input class="inputText" type="text" name="Nombre" id="Nombre" placeholder="...Pikachu..." maxlength="25">
+                        <input class="botonBuscarPokemon" type="button" name="botonBuscarPokemon" id="botonBuscarPokemon" value="Buscar Pokémon" onclick="fetchPokemon()">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="lomoPokedex0">
+            <div class="lomoPokedex1"></div>
+            <div class="lomoPokedex2"></div>
+            <div class="divElipse"></div>
+        </div>
+
+
+        <div class="cuerpoPokedexDer">
+            <div class="cuerpoPokedexDer1">
+                <div class="contenedorResultado">
+                    <div class="contenedorPokemon">
+                        <div class="muestraNombre">  
+                            <span id="pokeNombre"></span>
+                        </div>
+                        <div class="contenedorImg">
+                            <img src="" alt="" id="pokeImg" width="200px">
+                        </div>
+                    </div>
+                    <div class="contenedorInfoPokemon">
+                        <div class="infoTitulo">Información:</div>
+                        <div class="detalle">
+                            <label for="pokeName" id="pokeName"> Nombre: </label>
+                            <label for="pokeTipo" id="pokeTipo"> Tipo: </label> 
+                            <label for="pokeExp" id="pokeExp"> Exp: </label>
+                            <label for="pokeAltura" id="pokeAltura"> Altura: </label>
+                            <label for="pokePeso" id="pokePeso"> Peso: </label>
+                            <label for="pokeHabilidad" id="pokeHabilidad"> Habilidad: </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
